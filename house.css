@@ -1,0 +1,39 @@
+
+
+.on {
+  fill: yellow;
+  color:yellow;
+  stroke: black;
+  
+}
+
+.off {
+  fill: grey;
+  color:black;
+  stroke: black;
+
+}
+
+svg {
+  border: 1px solid #FFF;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+}
+
+* { margin: 0 }
+
+
+
+.container {
+
+	display: flex;
+	align-items: center;
+	overflow-y: hidden;
+	width: 100%; // fallback
+	height: 100%;
+	transform: translate(calc(var(--i)/var(--n)*-100%));
+	
+}
+
+
