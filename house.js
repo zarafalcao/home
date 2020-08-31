@@ -133,7 +133,7 @@ xhr.onreadystatechange = function() {
 	}
     }
 };
-xhr.open('GET', "http://192.168.1.31/cm?cmnd=status", true);
+xhr.open('GET', "http://192.168.25.31/cm?cmnd=status", true);
 xhr.send();
 
 //Garagem
@@ -163,7 +163,7 @@ xhr1.onreadystatechange = function() {
 	}
     }
 };
-xhr1.open('GET', "http://192.168.1.30/cm?cmnd=status", true);
+xhr1.open('GET', "http://192.168.25.30/cm?cmnd=status", true);
 xhr1.send();
 
 
@@ -188,7 +188,7 @@ xhr2.onreadystatechange = function() {
 	}
     }
 };
-xhr2.open('GET', "http://192.168.1.32/cm?cmnd=status", true);
+xhr2.open('GET', "http://192.168.25.32/cm?cmnd=status", true);
 xhr2.send();
 
 console.log("REloaded")
@@ -210,7 +210,7 @@ function area1Click() {
         lampada3.setAttribute("class", "on");
         lampada4.setAttribute("class", "on");
 	var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.30/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.30/cm?cmnd=Power%20On", true);
         xhr.send();
 
     } else {
@@ -219,7 +219,7 @@ function area1Click() {
         lampada3.setAttribute("class", "off");
         lampada4.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.30/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.30/cm?cmnd=Power%20Off", true);
         xhr.send();
 
     }
@@ -239,7 +239,7 @@ function area2Click() {
         lampada8.setAttribute("class", "on");
         lustre1.setAttribute("class", "on");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.31/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.31/cm?cmnd=Power%20On", true);
         xhr.send();
     } else {
         lampada5.setAttribute("class", "off");
@@ -248,7 +248,7 @@ function area2Click() {
         lampada8.setAttribute("class", "off");
         lustre1.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.31/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.31/cm?cmnd=Power%20Off", true);
         xhr.send();
     }
 }
@@ -264,13 +264,13 @@ function area3Click() {
         lampada9.setAttribute("class", "on");
         lampada10.setAttribute("class", "on");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.32/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.32/cm?cmnd=Power%20On", true);
         xhr.send();
     } else {
         lampada9.setAttribute("class", "off");
         lampada10.setAttribute("class", "off");
 	var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.32/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.32/cm?cmnd=Power%20Off", true);
         xhr.send();
     }
 }

@@ -109,7 +109,7 @@ xhr.onreadystatechange = function() {
 	}
     }
 };
-xhr.open('GET', "http://192.168.1.21/cm?cmnd=status", true);
+xhr.open('GET', "http://192.168.25.21/cm?cmnd=status", true);
 xhr.send();
 
 
@@ -135,7 +135,7 @@ xhr1.onreadystatechange = function() {
 
     }
 };
-xhr1.open('GET', "http://192.168.1.22/cm?cmnd=status", true);
+xhr1.open('GET', "http://192.168.25.22/cm?cmnd=status", true);
 xhr1.send();
 
 
@@ -159,7 +159,7 @@ xhr2.onreadystatechange = function() {
 	}
     }
 };
-xhr2.open('GET', "http://192.168.1.23/cm?cmnd=status", true);
+xhr2.open('GET', "http://192.168.25.23/cm?cmnd=status", true);
 xhr2.send();
 
 
@@ -181,7 +181,7 @@ xhr3.onreadystatechange = function() {
 	}
     }
 };
-xhr3.open('GET', "http://192.168.1.24/cm?cmnd=status", true);
+xhr3.open('GET', "http://192.168.25.24/cm?cmnd=status", true);
 xhr3.send();
 
 
@@ -201,13 +201,13 @@ function area1Click() {
     if (area1Status == true) {
         lampada1Superir.setAttribute("class", "on");
 	var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.21/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.21/cm?cmnd=Power%20On", true);
         xhr.send();
 
     } else {
         lampada1Superir.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.21/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.21/cm?cmnd=Power%20Off", true);
         xhr.send();
 
     }
@@ -223,7 +223,7 @@ function area2Click() {
         lampada3BanheiroSuperior.setAttribute("class", "on");
         lampada4BanheiroSuperior.setAttribute("class", "on");
 	var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.22/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.22/cm?cmnd=Power%20On", true);
         xhr.send();
 
     } else {
@@ -231,7 +231,7 @@ function area2Click() {
         lampada3BanheiroSuperior.setAttribute("class", "off");
         lampada4BanheiroSuperior.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.22/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.22/cm?cmnd=Power%20Off", true);
         xhr.send();
 
     }
@@ -247,14 +247,14 @@ function area3Click() {
         lampada5SalaSuperior.setAttribute("class", "on");
         lampada6SalaSuperior.setAttribute("class", "on");
 	var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.23/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.23/cm?cmnd=Power%20On", true);
         xhr.send();
 
     } else {
         lampada5SalaSuperior.setAttribute("class", "off");
         lampada6SalaSuperior.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.23/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.23/cm?cmnd=Power%20Off", true);
         xhr.send();
 
     }
@@ -269,14 +269,14 @@ function area4Click() {
         lampada7QuartoMeninosSuperior.setAttribute("class", "on");
 
 	var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.24/cm?cmnd=Power%20On", true);
+        xhr.open('GET', "http://192.168.25.24/cm?cmnd=Power%20On", true);
         xhr.send();
 
     } else {
         lampada7QuartoMeninosSuperior.setAttribute("class", "off");
 
         var xhr = new XMLHttpRequest();
-        xhr.open('GET', "http://192.168.1.24/cm?cmnd=Power%20Off", true);
+        xhr.open('GET', "http://192.168.25.24/cm?cmnd=Power%20Off", true);
         xhr.send();
 
     }
