@@ -120,7 +120,6 @@ xhr.onreadystatechange = function() {
             lampada7.setAttribute("class", "on");
             lampada8.setAttribute("class", "on");
             lustre1.setAttribute("class", "on");
-
             area2Status = 1;
         }else{
 	    lampada5.setAttribute("class", "off");
@@ -128,9 +127,8 @@ xhr.onreadystatechange = function() {
             lampada7.setAttribute("class", "off");
             lampada8.setAttribute("class", "off");
             lustre1.setAttribute("class", "off");
-
             area2Status = 0;
-	}
+	    }
     }
 };
 xhr.open('GET', "http://192.168.25.31/cm?cmnd=status", true);
@@ -148,24 +146,18 @@ xhr1.onreadystatechange = function() {
             lampada2.setAttribute("class", "on");
             lampada3.setAttribute("class", "on");
             lampada4.setAttribute("class", "on");
-
-
             area1Status = 1;
         }else{
             lampada1.setAttribute("class", "off");
             lampada2.setAttribute("class", "off");
             lampada3.setAttribute("class", "off");
             lampada4.setAttribute("class", "off");
-
-
             area1Status = 0;
-
-	}
+	    }
     }
 };
 xhr1.open('GET', "http://192.168.25.30/cm?cmnd=status", true);
 xhr1.send();
-
 
 
 //Churrasqueira
@@ -178,14 +170,12 @@ xhr2.onreadystatechange = function() {
         if (myObj.Status.Power == 1) {
             lampada9.setAttribute("class", "on");
             lampada10.setAttribute("class", "on");
-
             area3Status = 1;
         }else{
 	    lampada9.setAttribute("class", "off");
             lampada10.setAttribute("class", "off");
-
             area3Status = 0;
-	}
+	    }
     }
 };
 xhr2.open('GET', "http://192.168.25.32/cm?cmnd=status", true);
@@ -212,7 +202,6 @@ function area1Click() {
 	var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.30/cm?cmnd=Power%20On", true);
         xhr.send();
-
     } else {
         lampada1.setAttribute("class", "off");
         lampada2.setAttribute("class", "off");
@@ -221,7 +210,6 @@ function area1Click() {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.30/cm?cmnd=Power%20Off", true);
         xhr.send();
-
     }
 }
 
