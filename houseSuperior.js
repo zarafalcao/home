@@ -200,16 +200,14 @@ function area1Click() {
     area1Status = !area1Status;
     if (area1Status == true) {
         lampada1Superir.setAttribute("class", "on");
-	var xhr = new XMLHttpRequest();
+	    var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.21/cm?cmnd=Power%20On", true);
         xhr.send();
-
     } else {
         lampada1Superir.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.21/cm?cmnd=Power%20Off", true);
         xhr.send();
-
     }
 }
 
@@ -222,10 +220,9 @@ function area2Click() {
         lampada2BanheiroSuperior.setAttribute("class", "on");
         lampada3BanheiroSuperior.setAttribute("class", "on");
         lampada4BanheiroSuperior.setAttribute("class", "on");
-	var xhr = new XMLHttpRequest();
+	    var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.22/cm?cmnd=Power%20On", true);
         xhr.send();
-
     } else {
         lampada2BanheiroSuperior.setAttribute("class", "off");
         lampada3BanheiroSuperior.setAttribute("class", "off");
@@ -233,7 +230,6 @@ function area2Click() {
         var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.22/cm?cmnd=Power%20Off", true);
         xhr.send();
-
     }
 }
 
@@ -246,17 +242,15 @@ function area3Click() {
     if (area3Status == true) {
         lampada5SalaSuperior.setAttribute("class", "on");
         lampada6SalaSuperior.setAttribute("class", "on");
-	var xhr = new XMLHttpRequest();
+	    var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.23/cm?cmnd=Power%20On", true);
         xhr.send();
-
     } else {
         lampada5SalaSuperior.setAttribute("class", "off");
         lampada6SalaSuperior.setAttribute("class", "off");
         var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.23/cm?cmnd=Power%20Off", true);
         xhr.send();
-
     }
 }
 
