@@ -261,17 +261,13 @@ function area4Click() {
     area4Status = !area4Status;
     if (area4Status == true) {
         lampada7QuartoMeninosSuperior.setAttribute("class", "on");
-
-	var xhr = new XMLHttpRequest();
+    	var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.24/cm?cmnd=Power%20On", true);
         xhr.send();
-
     } else {
         lampada7QuartoMeninosSuperior.setAttribute("class", "off");
-
         var xhr = new XMLHttpRequest();
         xhr.open('GET', "http://192.168.25.24/cm?cmnd=Power%20Off", true);
         xhr.send();
-
     }
 }
